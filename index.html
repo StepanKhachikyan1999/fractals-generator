@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fractals generator</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <canvas id="canvas"></canvas>
+    <button class="generate-tree-button">Գեներացնել ծառ</button>
+    <button id="download-btn">Ներբեռնել նկարը</button>
+
+    <div class="settings">
+        <button id="settings-btn">կարգավորումներ ⚙️</button>
+        <div class="settings-content">
+            <label>Length: <input type="range" id="length" min="80" max="200" value="120"></label>
+            <label>Branch Width: <input type="range" id="branchWidth" min="1" max="100" value="15"></label>
+            <label>Curve 1: <input type="range" id="curve1" min="0" max="40" value="10"></label>
+            <label>Curve 2: <input type="range" id="curve2" min="0" max="60" value="0"></label>
+        <label>Branch Color: <input type="color" id="branchColor" value="#8B4513"></label>
+    <label>Leaf Color: <input type="color" id="leafColor" value="#008000"></label> 
+    </div>
+</div>
+
+    <script src="./javascript/main.js"></script>
+</body>
+</html>
